@@ -6,9 +6,15 @@ namespace WCF.Common
     public interface ICommunicationChannel
     {
         [OperationContract]
-        decimal Add(int val1, int val2);
+        [FaultContract(typeof(CalculatorFault))]
+        void DonateBag(BagOfGoodies bagOfGoodies);
 
         [OperationContract]
-        decimal Divide(int numerator, int denominator);
+        [FaultContract(typeof(CalculatorFault))]
+        decimal Divide(decimal val1, decimal val2);
+
+        [OperationContract]
+        [FaultContract(typeof(CalculatorFault))]
+        decimal SafeDivide(decimal numerator, decimal denominator);
     }
 }
