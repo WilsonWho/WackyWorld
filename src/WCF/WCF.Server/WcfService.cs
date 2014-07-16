@@ -21,11 +21,14 @@ namespace WCF.Server
             _isListening = false;
             _isDisposed = false;
 
-            _serviceHost = new ServiceHost(typeof(TServiceType), new[] { new Uri(Constants.LocalHostNamedPipeUrl) });
+            _serviceHost = new ServiceHost(typeof (TServiceType),
+                                           new[]
+                                               {
+                                                   new Uri(Constants.LocalHostNamedPipeUrl)
+                                               });
             _serviceHost.AddServiceEndpoint(typeof (TServiceInterface),
                                             new NetNamedPipeBinding(NetNamedPipeSecurityMode.Transport), 
                                             remoteAddress);
-
             _serviceHost.Opened += ServiceHostOnOpened;
         }
 
