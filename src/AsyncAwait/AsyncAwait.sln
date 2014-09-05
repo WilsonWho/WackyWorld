@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait.Server", "AsyncAwait.Server\AsyncAwait.Server.csproj", "{CA3AE04E-699F-48D1-98B9-85AADE59C30B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwait.Client", "AsyncAwait.Client\AsyncAwait.Client.csproj", "{66CF22B7-6539-46B9-90E0-C5714F8C3FEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA3AE04E-699F-48D1-98B9-85AADE59C30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3AE04E-699F-48D1-98B9-85AADE59C30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3AE04E-699F-48D1-98B9-85AADE59C30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3AE04E-699F-48D1-98B9-85AADE59C30B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CF22B7-6539-46B9-90E0-C5714F8C3FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CF22B7-6539-46B9-90E0-C5714F8C3FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CF22B7-6539-46B9-90E0-C5714F8C3FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CF22B7-6539-46B9-90E0-C5714F8C3FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
